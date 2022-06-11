@@ -1,0 +1,84 @@
+@import 'config';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.main{
+    position: relative;
+    background: url(../img/mobile/image-header.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+header{
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        padding: 32px 0px;
+        .navbar{
+            display: none;
+            z-index: 2;
+            position: absolute;
+            top: 20%;
+            left: 33px;
+            width: 80%;
+            text-align: center;
+            background: $white; 
+                
+                &::before{
+                    content: "";
+                    border: 14px solid;
+                    border-color: transparent white white transparent;
+                    position: absolute;
+                    right: 0;
+                    top: -28px;
+                }
+            ul{
+                list-style: none;
+                li{
+                    padding: 25px 0;
+                    .contact{
+                        color: #272727;
+                        text-transform: uppercase;
+                        font-family: 'Fraunces',sans-serif;
+                        background: $primary-yellow;
+                        border-radius: 2rem;
+                        padding: 18px 30px;
+                        font-size: .9rem;
+
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color: $dark-grayish-blue;
+                    
+                }
+            }
+        }
+    }
+}
+
+//Main contant
+.offer{
+    text-align: center;
+    .container{
+        width: 85%;
+        margin: 95px auto 0;
+        .main-title{
+            color: $white;
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            font-size: 3.3rem;
+            padding-bottom: 1em;
+        }
+    }
+}
