@@ -10,6 +10,13 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 
+h1{
+    font-family: 'Fraunces';
+}
+
+p{
+    line-height: 1.6rem;
+}
 .main{
     position: relative;
     background: url(../img/mobile/image-header.jpg) no-repeat center center/cover;
@@ -67,7 +74,7 @@ header{
     }
 }
 
-//Main contant
+//Offer
 .offer{
     text-align: center;
     .container{
@@ -75,10 +82,151 @@ header{
         margin: 95px auto 0;
         .main-title{
             color: $white;
-            font-family: 'Fraunces', serif;
             text-transform: uppercase;
             font-size: 3.3rem;
-            padding-bottom: 1em;
+            padding-bottom: .6em;
+        }
+    }
+}
+
+//info section
+
+.info{
+    
+    .img-container{
+        img{
+            width: 100%;
+        }
+    }
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 4.1em 1.9em;
+
+        .info-title{
+            color: $very-blue;
+            font-weight: $bold;
+            font-size: 2rem;
+        }
+        .info-text{
+            color: $dark-grayish-blue;
+            padding: 35px 0;
+        }
+        .more:first-of-type{
+            text-decoration-color: $primary-yellow;
+            text-decoration-thickness: .2em;
+            color: $very-blue;
+            text-transform: uppercase;
+            font-family: 'Fraunces';
+            font-weight: $bold;
+            
+        }
+
+        .more:last-of-type{
+            text-decoration-color: $primary-red;
+        }
+    }
+}
+
+//About section
+.about{
+    .about-contant{
+        background-image: url(../img/mobile/image-graphic-design.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        padding: 1.25em 1.25em 4em;
+
+        .about-title{
+            color: $dark-cyan;
+            font-weight:$bold;
+            font-size: 1.9rem;
+            padding-bottom: 1.8em;
+        }
+       
+        .about-text{
+            color: $dark-cyan;
+        }
+    }
+    .about-contant:last-of-type{
+        background-image: url(../img/mobile/image-photography.jpg);
+        .about-title{
+            color: $dark-blue;
+        }
+        .about-text{
+            color: $dark-blue;
+        }
+
+    }
+}
+
+//Testimonials section
+.testimonials{
+    text-align: center;
+    .title{
+        color: $grayish-blue;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        margin: 4.75em 0;
+    }
+    .container-flex{
+        .employee-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 1.6em 4.4em;
+            .employee-pic{
+                border-radius: 50%;
+                width: 4.4em;
+            }
+            .text{
+                color: $very-dark-grayish-blue;
+                padding: 2.5em 0;
+                font-size: 1.07rem;
+            }
+            .name{
+                font-weight: $bold;
+                font-size: 1.2rem;
+                padding-bottom: .6em;
+            }
+            .role{
+                color: $dark-grayish-blue;
+            }
+        }
+
+    }
+}
+
+//Projects
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    img{
+        width: 100%;
+    }
+    .display-desktop{
+        display: none;
+    }
+}
+
+//Footer
+footer{
+    background: $moderate-cyan;
+    text-align: center;
+    .logo{
+        path{
+            fill: $dark-cyan;
         }
     }
 }

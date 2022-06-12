@@ -9,6 +9,14 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+h1 {
+  font-family: 'Fraunces';
+}
+
+p {
+  line-height: 1.6rem;
+}
+
 .main {
   position: relative;
   background: url(../img/mobile/image-header.jpg) no-repeat center center/cover;
@@ -85,9 +93,170 @@ header .nav-container .navbar ul a {
 
 .offer .container .main-title {
   color: white;
-  font-family: 'Fraunces', serif;
   text-transform: uppercase;
   font-size: 3.3rem;
-  padding-bottom: 1em;
+  padding-bottom: .6em;
+}
+
+.info .img-container img {
+  width: 100%;
+}
+
+.info .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 4.1em 1.9em;
+}
+
+.info .text-container .info-title {
+  color: #23303e;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.info .text-container .info-text {
+  color: #818498;
+  padding: 35px 0;
+}
+
+.info .text-container .more:first-of-type {
+  -webkit-text-decoration-color: #fad400;
+          text-decoration-color: #fad400;
+  text-decoration-thickness: .2em;
+  color: #23303e;
+  text-transform: uppercase;
+  font-family: 'Fraunces';
+  font-weight: 900;
+}
+
+.info .text-container .more:last-of-type {
+  -webkit-text-decoration-color: #fe7867;
+          text-decoration-color: #fe7867;
+}
+
+.about .about-contant {
+  background-image: url(../img/mobile/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1.25em 1.25em 4em;
+}
+
+.about .about-contant .about-title {
+  color: #25564b;
+  font-weight: 900;
+  font-size: 1.9rem;
+  padding-bottom: 1.8em;
+}
+
+.about .about-contant .about-text {
+  color: #25564b;
+}
+
+.about .about-contant:last-of-type {
+  background-image: url(../img/mobile/image-photography.jpg);
+}
+
+.about .about-contant:last-of-type .about-title {
+  color: #19536b;
+}
+
+.about .about-contant:last-of-type .about-text {
+  color: #19536b;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials .title {
+  color: #a7abae;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .2em;
+  margin: 4.75em 0;
+}
+
+.testimonials .container-flex .employee-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.6em 4.4em;
+}
+
+.testimonials .container-flex .employee-box .employee-pic {
+  border-radius: 50%;
+  width: 4.4em;
+}
+
+.testimonials .container-flex .employee-box .text {
+  color: #5a636c;
+  padding: 2.5em 0;
+  font-size: 1.07rem;
+}
+
+.testimonials .container-flex .employee-box .name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding-bottom: .6em;
+}
+
+.testimonials .container-flex .employee-box .role {
+  color: #818498;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.projects img {
+  width: 100%;
+}
+
+.projects .display-desktop {
+  display: none;
+}
+
+footer {
+  background: #62cbb8;
+  text-align: center;
+}
+
+footer .logo path {
+  fill: #25564b;
 }
 /*# sourceMappingURL=style.css.map */
